@@ -100,6 +100,8 @@ php artisan db:seed
 
 - 開発環境:http://localhost/
 - ユーザー登録:http://localhost/register
+- 一般ユーザーログイン:http://localhost/login
+- 管理者ログイン:http://localhost/admin/login
 - phpMyAdmin:http://localhost:8080/
 - MailHog (メール確認): http://localhost:8025
 
