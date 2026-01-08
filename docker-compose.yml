@@ -1,4 +1,4 @@
-version: '3.8'
+
 
 services:
   nginx:
@@ -10,6 +10,18 @@ services:
       - ./src:/var/www/
     depends_on:
       - php
+      - mailhog
+
+  mailhog:
+    image: mailhog/mailhog:v1.0.1
+    ports:
+      - "1025:1025"
+      - "8025:8025"
+    environment:
+      MH_STORAGE: maildir
+      MH_MAILDIR_PATH: /tmp
+    volumes:
+      - "./mailhog:/tmp"
 
   php:
     build: ./docker/php
@@ -17,7 +29,8 @@ services:
       - ./src:/var/www/
 
   mysql:
-    image: mysql:8.0.26
+    image: mysql:8.0.33
+    platform: linux/amd64
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: laravel_db

@@ -1,0 +1,6 @@
+# Docker runtime data
+docker/mysql/data/
+mailhog/
+
+# OS
+.DS_Store

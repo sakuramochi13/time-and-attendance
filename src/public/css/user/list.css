@@ -1,0 +1,136 @@
+
+.main {
+    background-color: #f0eff2;
+    min-height: 100vh;
+    padding-top: 60px;
+
+}
+
+.attendance-list__container {
+    width: 100%;
+    min-width: 740px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 16px;
+    box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+    .attendance-list__container {
+        width: clamp(740px, 65vw, 900px);
+        padding: 0;
+    }
+}
+
+.attendance-list__title {
+    font-size: clamp(24px, 3.0vw, 28px);
+    border-left: 8px solid black;
+    padding: 0 16px;
+    margin: 0 0 30px;
+}
+
+.attendance-list__calendar {
+    background-color: #ffffff;
+    width: 100%;
+    height: clamp(46px, 5vw, 56px);
+    margin-bottom: 30px;
+    padding: 0 15px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.list__calendar-before,
+.list__calendar-after {
+    font-size: clamp(15px, 1.7vw, 18px);
+    color: #737373;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.list__calendar-center {
+    font-size: clamp(16px, 1.8vw, 20px);
+    color: black;
+    font-weight: bold;
+    position: relative;
+    cursor: pointer;
+    width: 300px;
+    text-align: center;
+}
+
+#calendar-input {
+    position: absolute;
+    inset: 0;
+    border: none;
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    color: transparent;
+    cursor: pointer;
+}
+
+
+.icon-arrow,
+.icon-calendar {
+    width: clamp(22px, 2.3vw, 26px);
+    height: clamp(22px, 2.3vw, 26px);
+    vertical-align: middle;
+}
+
+.attendance-list__table {
+    background-color: #ffffff;
+    border-radius: 8px;
+    width: 100%;
+    table-layout: fixed;
+}
+
+
+.attendance-list__table-title,
+.attendance-list__table-cell {
+    font-size: clamp(14px, 1.6vw, 16px);
+    color: #737373;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    letter-spacing: 0.1em;
+}
+
+.attendance-list__table-title {
+    border-bottom: 3px solid #f0eff2;
+    height: clamp(38px, 4vw, 46px);
+}
+
+.attendance-list__table-cell {
+    border-top: 2px solid #f0eff2;
+    height: clamp(36px, 4vw, 44px);
+}
+
+.attendance-list__table-cell--detail {
+    color: black;
+    text-decoration: none;
+}
+
+.attendance-list__col--date {
+    width: 20%;
+}
+
+.attendance-list__col--check-in {
+    width: 15%;
+}
+
+.attendance-list__col--check-out {
+    width: 15%;
+}
+
+.attendance-list__col--break {
+    width: 15%;
+}
+
+.attendance-list__col--total {
+    width: 15%;
+}
+
+.attendance-list__col--detail {
+    width: 20%;
+}

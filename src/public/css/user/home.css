@@ -1,0 +1,85 @@
+
+.main {
+    background-color: #f0eff2;
+    min-height: 100vh;
+    padding-top: clamp(80px, 15vh, 180px);
+}
+
+.attendance__container {
+    width: clamp(400px, 40vw, 520px);
+    margin: 0 auto;
+    text-align: center;
+}
+
+.form-attendance {
+    text-align: center;
+}
+
+.attendance__section {
+    display: flex;
+    justify-content: center;
+    gap: clamp(30px, 5vw, 60px);
+}
+
+.attendance__status {
+    display: flex;
+    justify-content: center;
+}
+
+.attendance__status-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: clamp(30px, 4vw, 40px);
+    padding: 0 clamp(15px, 2vw, 24px);
+    margin: 0;
+    border-radius: 50px;
+    font-size: clamp(14px, 1.5vw, 18px);
+    color: #696969;
+    white-space: nowrap;
+    background-color: #c8c8c8;
+}
+
+.attendance__date {
+    font-size: clamp(24px, 2.5vw, 32px);
+    margin: 20px 0;
+}
+
+.attendance__clock {
+    font-size: clamp(50px, 6vw, 85px);
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.attendance__button {
+    width: clamp(154px, 15vw, 190px);
+    height: clamp(54px, 6vw, 64px);
+    margin-top: 30px;
+    border: none;
+    border-radius: 15px;
+    font-size: clamp(22px, 2vw, 26px);
+    cursor: pointer;
+    transition: transform 0.1s;
+}
+
+.attendance__button:active {
+    transform: scale(0.96);
+}
+
+.work {
+    background-color: black;
+    color: #ffffff;
+    font-weight: 580;
+}
+
+.break {
+    background-color: #ffffff;
+    color: black;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.attendance__clock-out--message {
+    font-size: clamp(18px, 1.8vw, 24px);
+    margin-top: 40px;
+}

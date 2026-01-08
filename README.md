@@ -28,7 +28,7 @@ docker-compose up -d --build
 
 - nginx : Web サーバ (ポート 80)
 - php : Laravel アプリケーション用コンテナ
-- mysql : MySQL 8.0.26
+- mysql : MySQL 8.0.33
 - phpmyadmin : DB 管理ツール (ポート 8080)
 - mailhog : メール動作確認用 (ポート 8025)
   本リポジトリの docker-compose.yml では、Apple シリコン(M1/M2/M3/M4) 対応のため
@@ -86,7 +86,7 @@ php artisan db:seed
 
 - PHP 8.1.33
 - Laravel 8.83.8
-- MySQL 8.0.26
+- MySQL 8.0.33
 - nginx 1.21.1
 - phpMyAdmin (latest)
 - MailHog v1.0.1
@@ -94,7 +94,7 @@ php artisan db:seed
 
 ## ER 図
 
-![ER図](作成中)
+![ER図](images/er-TandA.drawio.png)
 
 ## URL 一覧
 
@@ -113,10 +113,13 @@ php artisan db:seed
 
 管理者ユーザーのテストアカウントは以下の通りです。
 
-- **メールアドレス**：
-- **パスワード**：
+- **メールアドレス**：tetsuko.k@coachtech.com
+- **パスワード**：password123
 
 一般ユーザーのテストアカウントは以下の通りです。
 
-- **メールアドレス**：
-- **パスワード**：
+- **メールアドレス**：reina.n@coachtech.com
+- **パスワード**：password123
+
+## テスト環境
+

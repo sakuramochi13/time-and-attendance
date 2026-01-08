@@ -1,0 +1,63 @@
+
+.logo-img {
+    width: clamp(230px, calc(230px + (100vw - 768px) * 0.1597222), 299px);
+    height: auto;
+    transition: width .2s ease;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    height: 70px;
+}
+
+.logo-block {
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 10px 20px;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    gap: clamp(25px, 2.5vw, 40px);
+}
+
+.nav-link,
+.nav-link__logout {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: clamp(18px,
+                calc(18px + (100vw - 768px) * 0.0032),
+                20px);
+    cursor: pointer;
+    text-decoration: none;
+    padding: 0;
+    white-space: nowrap;
+    transition: font-size .2s ease, color 0.2s ease;
+}
+
+
+.nav-link__logout {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.logout-form {
+    display: inline;
+}
+
+input:focus {
+    outline: none;
+}
+
