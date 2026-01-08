@@ -120,6 +120,3 @@ php artisan db:seed
 
 - **メールアドレス**：reina.n@coachtech.com
 - **パスワード**：password123
-
-## テスト環境
-
